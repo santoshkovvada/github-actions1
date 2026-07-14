@@ -1,0 +1,16 @@
+name: my first exaample 
+on: push # triggers or provide multiple events
+jobs:
+    first job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: welcome message
+              run: echo "My first Github actions job "
+
+            - name : List files 
+              run: ls 
+            
+            - name : read files 
+              run: cat readme.md 
+              
+
