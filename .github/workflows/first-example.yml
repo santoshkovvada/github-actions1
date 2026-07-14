@@ -1,7 +1,7 @@
 name: my first exaample 
 on: push # triggers or provide multiple events
 jobs:
-    first job:
+    first_job:
         runs-on: ubuntu-latest
         steps:
             - name: welcome message
@@ -12,5 +12,5 @@ jobs:
             
             - name : read files 
               run: cat readme.md 
-              
+
 
