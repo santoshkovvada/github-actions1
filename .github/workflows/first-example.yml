@@ -4,17 +4,21 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
-            - name: welcome message
+            - name: Checkout Repo 
+              run: actions/checkout@v7.0.0
+              
+            - name: List and Read files 
               run: 
                 echo "My first Github actions job "
                 ls -lrta
                 cat README.md
               
 
-            - name : List files 
-              run: ls 
+            - name : Generate ASCII artwork 
+              run: cowsay -f dragon "Run for cover , I am a DRAGON ....RAWR" >> dragon.txt
+              
             
-            - name : read files 
-              run: cat readme.md 
+            # - name : read files 
+            #  run: cat readme.md 
 
 
